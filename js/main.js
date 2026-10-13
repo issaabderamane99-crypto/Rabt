@@ -84,6 +84,10 @@ const nodes = document.querySelectorAll("[data-i18n]");
 const EN = {};
 nodes.forEach(el => { EN[el.dataset.i18n] = el.innerHTML; });
 
+// Arabic is turned off for now (English only). To turn it back on,
+// set ENABLE_ARABIC to true; the language button will appear in the menu.
+const ENABLE_ARABIC = false;
+
 const toggle = document.querySelector(".lang-toggle");
 
 function setLang(lang) {
@@ -98,13 +102,15 @@ function setLang(lang) {
   try { localStorage.setItem("rabt-lang", lang); } catch (e) {}
 }
 
-toggle.addEventListener("click", () => {
-  setLang(document.documentElement.lang === "ar" ? "en" : "ar");
-});
-
-let saved = null;
-try { saved = localStorage.getItem("rabt-lang"); } catch (e) {}
-if (saved === "ar") setLang("ar");
+if (ENABLE_ARABIC) {
+  toggle.hidden = false;
+  toggle.addEventListener("click", () => {
+    setLang(document.documentElement.lang === "ar" ? "en" : "ar");
+  });
+  let saved = null;
+  try { saved = localStorage.getItem("rabt-lang"); } catch (e) {}
+  if (saved === "ar") setLang("ar");
+}
 
 // Mobile menu
 const menuBtn = document.querySelector(".menu-toggle");
