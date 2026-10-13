@@ -1,13 +1,13 @@
-# Rabt — ربط
+# Rabt
 
-Website for **Rabt**, a SaaS and technology solutions company serving companies, for-profit businesses and nonprofit organizations. "Rabt" (ربط) is Arabic for *connection*.
+Website for **Rabt**, a SaaS and technology solutions company serving companies, for-profit businesses and nonprofit organizations. We bridge the gap between business and people.
 
 ## What's here
 
 A static website (English; Arabic translations are built in and can be turned on in `js/main.js`). No build step.
 
 ```
-index.html      Main page: hero, solutions, who we serve, process, about, contact
+index.html      Main page: hero, solutions, data analysis, who we serve, process, about, FAQ, contact
 css/styles.css  Styles and responsive layout
 js/main.js      Language toggle, mobile menu, contact form
 assets/logo.svg Logo / favicon

@@ -219,3 +219,13 @@ html[lang="ar"] h2 { line-height: 1.4; letter-spacing: 0; }
   .pillar:first-child { border-top: 0; }
   .engagements { grid-template-columns: 1fr; }
 }
+
+/* About details */
+.mission { margin-top: 28px; background: var(--teal); color: #fff; border-radius: var(--radius); padding: 24px 26px; }
+.mission-label { color: var(--gold); font-weight: 800; font-size: .8rem; text-transform: uppercase; letter-spacing: .12em; }
+.about .mission p { color: #E3F1EF; margin: 8px 0 0; font-size: 1.1rem; font-weight: 600; }
+.facts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; margin-top: 56px; border-top: 1px solid var(--line); }
+.fact { padding: 22px 20px 0 0; display: flex; flex-direction: column; gap: 4px; }
+.fact-label { font-size: .8rem; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: .1em; }
+.fact-value { font-weight: 700; color: var(--ink); }
+@media (max-width: 760px) { .facts { grid-template-columns: 1fr 1fr; } }
