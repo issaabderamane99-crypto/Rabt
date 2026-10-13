@@ -127,7 +127,7 @@ document.getElementById("contact-form").addEventListener("submit", e => {
     `Name: ${f.get("name")}\nOrganization: ${f.get("org")}\nEmail: ${f.get("email")}\n` +
     `Type: ${f.get("type")}\n\n${f.get("message")}`;
   window.location.href =
-    `mailto:info@rabt.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    `mailto:rabtsublychain@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 });
 
 document.getElementById("year").textContent = new Date().getFullYear();

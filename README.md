@@ -23,6 +23,6 @@ python3 -m http.server 8000
 
 ## To do
 
-- Confirm the contact email (currently `info@rabt.com`)
+- Contact email: `rabtsublychain@gmail.com`
 - Connect the contact form to a form service or backend (it currently opens the visitor's email app)
 - Deploy (e.g. GitHub Pages) and point the rabt.com domain to it
