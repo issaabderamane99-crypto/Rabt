@@ -1,6 +1,6 @@
-# Rabt — رابط
+# Rabt — ربط
 
-Website for **Rabt**, a SaaS and technology solutions company serving companies, for-profit businesses and nonprofit organizations. "Rabt" (رابط) is Arabic for *connection*.
+Website for **Rabt**, a SaaS and technology solutions company serving companies, for-profit businesses and nonprofit organizations. "Rabt" (ربط) is Arabic for *connection*.
 
 ## What's here
 
