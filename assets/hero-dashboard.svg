@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 440" fill="none" font-family="Plus Jakarta Sans, Arial, sans-serif">
+  <defs>
+    <filter id="sh" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#0E3B43" flood-opacity=".14"/>
+    </filter>
+    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2BB3A3" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#2BB3A3" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- window -->
+  <rect x="20" y="24" width="500" height="360" rx="18" fill="#fff" filter="url(#sh)"/>
+  <rect x="20" y="24" width="500" height="40" rx="18" fill="#F3F7F6"/>
+  <rect x="20" y="46" width="500" height="18" fill="#F3F7F6"/>
+  <circle cx="44" cy="44" r="5" fill="#F27B6B"/>
+  <circle cx="62" cy="44" r="5" fill="#F2B544"/>
+  <circle cx="80" cy="44" r="5" fill="#2BB3A3"/>
+  <rect x="190" y="36" width="160" height="16" rx="8" fill="#fff"/>
+
+  <!-- sidebar -->
+  <rect x="20" y="64" width="64" height="320" fill="#0E3B43"/>
+  <rect x="20" y="364" width="64" height="20" rx="0" fill="#0E3B43"/>
+  <rect x="38" y="84" width="28" height="28" rx="8" fill="#2BB3A3"/>
+  <rect x="40" y="130" width="24" height="6" rx="3" fill="#2E5B62"/>
+  <rect x="40" y="152" width="24" height="6" rx="3" fill="#2E5B62"/>
+  <rect x="40" y="174" width="24" height="6" rx="3" fill="#2E5B62"/>
+  <rect x="40" y="196" width="24" height="6" rx="3" fill="#2E5B62"/>
+
+  <!-- KPI tiles -->
+  <g>
+    <rect x="102" y="82" width="124" height="70" rx="12" fill="#F3F7F6"/>
+    <text x="116" y="104" font-size="11" fill="#4A6268">Orders</text>
+    <text x="116" y="132" font-size="22" font-weight="700" fill="#0B2A30">1,284</text>
+    <text x="186" y="132" font-size="11" font-weight="700" fill="#2BB3A3">+12%</text>
+
+    <rect x="238" y="82" width="124" height="70" rx="12" fill="#F3F7F6"/>
+    <text x="252" y="104" font-size="11" fill="#4A6268">On-time</text>
+    <text x="252" y="132" font-size="22" font-weight="700" fill="#0B2A30">96.4%</text>
+
+    <rect x="374" y="82" width="128" height="70" rx="12" fill="#0E3B43"/>
+    <text x="388" y="104" font-size="11" fill="#9CC9C3">Cost saved</text>
+    <text x="388" y="132" font-size="22" font-weight="700" fill="#fff">$38K</text>
+  </g>
+
+  <!-- line chart -->
+  <rect x="102" y="166" width="260" height="198" rx="12" fill="#fff" stroke="#DCE6E4"/>
+  <text x="118" y="190" font-size="12" font-weight="700" fill="#0B2A30">Monthly performance</text>
+  <g stroke="#EEF3F2">
+    <line x1="118" y1="226" x2="346" y2="226"/>
+    <line x1="118" y1="266" x2="346" y2="266"/>
+    <line x1="118" y1="306" x2="346" y2="306"/>
+    <line x1="118" y1="344" x2="346" y2="344"/>
+  </g>
+  <path d="M118 320 L150 300 L182 308 L214 270 L246 280 L278 240 L310 248 L346 210 L346 344 L118 344 Z" fill="url(#area)"/>
+  <path d="M118 320 L150 300 L182 308 L214 270 L246 280 L278 240 L310 248 L346 210" stroke="#2BB3A3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M118 334 L150 326 L182 318 L214 312 L246 300 L278 292 L310 284 L346 270" stroke="#F2B544" stroke-width="2.5" stroke-dasharray="5 5" stroke-linecap="round"/>
+  <circle cx="346" cy="210" r="5" fill="#fff" stroke="#2BB3A3" stroke-width="3"/>
+
+  <!-- donut -->
+  <rect x="374" y="166" width="128" height="198" rx="12" fill="#fff" stroke="#DCE6E4"/>
+  <text x="388" y="190" font-size="12" font-weight="700" fill="#0B2A30">By channel</text>
+  <g transform="translate(438 258)">
+    <circle r="38" stroke="#EEF3F2" stroke-width="14"/>
+    <circle r="38" stroke="#0E3B43" stroke-width="14" stroke-dasharray="107 239" transform="rotate(-90)"/>
+    <circle r="38" stroke="#2BB3A3" stroke-width="14" stroke-dasharray="72 239" stroke-dashoffset="-107" transform="rotate(-90)"/>
+    <circle r="38" stroke="#F2B544" stroke-width="14" stroke-dasharray="40 239" stroke-dashoffset="-179" transform="rotate(-90)"/>
+  </g>
+  <rect x="390" y="316" width="10" height="10" rx="3" fill="#0E3B43"/><rect x="406" y="318" width="40" height="6" rx="3" fill="#DCE6E4"/>
+  <rect x="390" y="336" width="10" height="10" rx="3" fill="#2BB3A3"/><rect x="406" y="338" width="56" height="6" rx="3" fill="#DCE6E4"/>
+
+  <!-- floating card -->
+  <g filter="url(#sh)">
+    <rect x="360" y="352" width="182" height="64" rx="14" fill="#fff"/>
+  </g>
+  <rect x="374" y="366" width="36" height="36" rx="10" fill="#E3F5F2"/>
+  <path d="M383 390 L390 382 L396 387 L403 376" stroke="#2BB3A3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="420" y="381" font-size="11" fill="#4A6268">Insight</text>
+  <text x="420" y="398" font-size="13" font-weight="700" fill="#0B2A30">Demand up 18%</text>
+</svg>

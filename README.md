@@ -4,7 +4,7 @@ Website for **Rabt**, a SaaS and technology solutions company serving companies,
 
 ## What's here
 
-A static, bilingual (English / Arabic, with right-to-left layout) website. No build step.
+A static website (English; Arabic translations are built in and can be turned on in `js/main.js`). No build step.
 
 ```
 index.html      Main page: hero, solutions, who we serve, process, about, contact

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 400" fill="none" font-family="Plus Jakarta Sans, Arial, sans-serif">
+  <defs>
+    <filter id="sh" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#0E3B43" flood-opacity=".13"/>
+    </filter>
+  </defs>
+  <rect width="520" height="400" rx="24" fill="#E3F5F2"/>
+
+  <!-- raw data sheet -->
+  <g filter="url(#sh)">
+    <rect x="34" y="60" width="190" height="230" rx="14" fill="#fff"/>
+  </g>
+  <text x="52" y="88" font-size="12" font-weight="700" fill="#0B2A30">Raw data</text>
+  <g fill="#F3F7F6">
+    <rect x="52" y="102" width="154" height="20" rx="4" fill="#0E3B43"/>
+  </g>
+  <g fill="#DCE6E4">
+    <rect x="52" y="132" width="40" height="8" rx="4"/><rect x="100" y="132" width="50" height="8" rx="4"/><rect x="158" y="132" width="48" height="8" rx="4"/>
+    <rect x="52" y="152" width="40" height="8" rx="4"/><rect x="100" y="152" width="34" height="8" rx="4"/><rect x="158" y="152" width="48" height="8" rx="4" fill="#F27B6B" opacity=".6"/>
+    <rect x="52" y="172" width="40" height="8" rx="4"/><rect x="100" y="172" width="50" height="8" rx="4"/><rect x="158" y="172" width="30" height="8" rx="4"/>
+    <rect x="52" y="192" width="40" height="8" rx="4"/><rect x="100" y="192" width="44" height="8" rx="4" fill="#F27B6B" opacity=".6"/><rect x="158" y="192" width="48" height="8" rx="4"/>
+    <rect x="52" y="212" width="40" height="8" rx="4"/><rect x="100" y="212" width="50" height="8" rx="4"/><rect x="158" y="212" width="40" height="8" rx="4"/>
+    <rect x="52" y="232" width="40" height="8" rx="4"/><rect x="100" y="232" width="28" height="8" rx="4"/><rect x="158" y="232" width="48" height="8" rx="4"/>
+    <rect x="52" y="252" width="40" height="8" rx="4"/><rect x="100" y="252" width="50" height="8" rx="4"/><rect x="158" y="252" width="36" height="8" rx="4"/>
+  </g>
+
+  <!-- arrow -->
+  <path d="M236 176 C 256 176, 262 176, 282 176" stroke="#0E3B43" stroke-width="3" stroke-linecap="round" stroke-dasharray="2 7"/>
+  <path d="M276 168 L286 176 L276 184" stroke="#0E3B43" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- insight card -->
+  <g filter="url(#sh)">
+    <rect x="296" y="40" width="196" height="270" rx="14" fill="#fff"/>
+  </g>
+  <text x="314" y="68" font-size="12" font-weight="700" fill="#0B2A30">Clear insights</text>
+  <g>
+    <rect x="316" y="166" width="22" height="64" rx="5" fill="#8AD3C9"/>
+    <rect x="348" y="136" width="22" height="94" rx="5" fill="#2BB3A3"/>
+    <rect x="380" y="150" width="22" height="80" rx="5" fill="#8AD3C9"/>
+    <rect x="412" y="104" width="22" height="126" rx="5" fill="#0E3B43"/>
+    <rect x="444" y="120" width="22" height="110" rx="5" fill="#2BB3A3"/>
+  </g>
+  <line x1="314" y1="232" x2="474" y2="232" stroke="#DCE6E4" stroke-width="2"/>
+  <rect x="314" y="250" width="160" height="42" rx="10" fill="#F3F7F6"/>
+  <circle cx="334" cy="271" r="9" fill="#F2B544"/>
+  <path d="M330 271 L333 274 L339 267" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="352" y="263" width="104" height="7" rx="3.5" fill="#0E3B43"/>
+  <rect x="352" y="276" width="70" height="6" rx="3" fill="#DCE6E4"/>
+
+  <!-- magnifier -->
+  <g transform="translate(206 300)">
+    <circle r="34" fill="#fff" stroke="#0E3B43" stroke-width="7"/>
+    <path d="M-16 8 L-6 -2 L4 4 L16 -10" stroke="#2BB3A3" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M24 24 L50 50" stroke="#0E3B43" stroke-width="12" stroke-linecap="round"/>
+  </g>
+
+  <!-- tags -->
+  <rect x="300" y="332" width="74" height="28" rx="14" fill="#fff"/>
+  <text x="318" y="351" font-size="12" font-weight="600" fill="#0E3B43">Clean</text>
+  <rect x="382" y="332" width="104" height="28" rx="14" fill="#0E3B43"/>
+  <text x="398" y="351" font-size="12" font-weight="600" fill="#fff">Visualize</text>
+</svg>

@@ -131,7 +131,7 @@ document.getElementById("contact-form").addEventListener("submit", e => {
   const subject = `Website inquiry from ${f.get("name")} (${f.get("org") || "—"})`;
   const body =
     `Name: ${f.get("name")}\nOrganization: ${f.get("org")}\nEmail: ${f.get("email")}\n` +
-    `Type: ${f.get("type")}\n\n${f.get("message")}`;
+    `Type: ${f.get("type")}\nService: ${f.get("service")}\n\n${f.get("message")}`;
   window.location.href =
     `mailto:rabtsupplychain@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 });

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 400" fill="none" font-family="Plus Jakarta Sans, Arial, sans-serif">
+  <defs>
+    <filter id="sh" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#0E3B43" flood-opacity=".13"/>
+    </filter>
+  </defs>
+  <rect width="520" height="400" rx="24" fill="#EAF1F6"/>
+
+  <!-- people -->
+  <g>
+    <circle cx="96" cy="120" r="22" fill="#0E3B43"/>
+    <path d="M58 196 C 58 164, 134 164, 134 196 Z" fill="#0E3B43"/>
+    <circle cx="150" cy="140" r="18" fill="#2BB3A3"/>
+    <path d="M118 204 C 118 178, 182 178, 182 204 Z" fill="#2BB3A3"/>
+    <circle cx="200" cy="120" r="22" fill="#F2B544"/>
+    <path d="M162 196 C 162 164, 238 164, 238 196 Z" fill="#F2B544"/>
+  </g>
+  <!-- heart -->
+  <g filter="url(#sh)"><circle cx="150" cy="282" r="54" fill="#fff"/></g>
+  <path d="M150 306 C 120 286, 120 262, 136 258 C 144 256, 150 262, 150 268 C 150 262, 156 256, 164 258 C 180 262, 180 286, 150 306 Z" fill="#F27B6B"/>
+
+  <!-- program card -->
+  <g filter="url(#sh)"><rect x="268" y="56" width="216" height="288" rx="16" fill="#fff"/></g>
+  <text x="288" y="88" font-size="13" font-weight="700" fill="#0B2A30">Program impact</text>
+
+  <text x="288" y="122" font-size="11" fill="#4A6268">Donations goal</text>
+  <rect x="288" y="130" width="176" height="10" rx="5" fill="#EEF3F2"/>
+  <rect x="288" y="130" width="138" height="10" rx="5" fill="#2BB3A3"/>
+
+  <text x="288" y="166" font-size="11" fill="#4A6268">Volunteers active</text>
+  <rect x="288" y="174" width="176" height="10" rx="5" fill="#EEF3F2"/>
+  <rect x="288" y="174" width="104" height="10" rx="5" fill="#F2B544"/>
+
+  <text x="288" y="210" font-size="11" fill="#4A6268">Families served</text>
+  <rect x="288" y="218" width="176" height="10" rx="5" fill="#EEF3F2"/>
+  <rect x="288" y="218" width="156" height="10" rx="5" fill="#0E3B43"/>
+
+  <rect x="288" y="248" width="82" height="76" rx="12" fill="#F3F7F6"/>
+  <text x="300" y="274" font-size="11" fill="#4A6268">Donors</text>
+  <text x="300" y="304" font-size="20" font-weight="700" fill="#0B2A30">412</text>
+  <rect x="382" y="248" width="82" height="76" rx="12" fill="#0E3B43"/>
+  <text x="394" y="274" font-size="11" fill="#9CC9C3">Grants</text>
+  <text x="394" y="304" font-size="20" font-weight="700" fill="#fff">6</text>
+</svg>
