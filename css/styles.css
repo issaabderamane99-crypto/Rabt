@@ -212,3 +212,11 @@ h2 { font-size: clamp(1.8rem, 3.5vw, 2.5rem); line-height: 1.2; margin: 0 0 14px
 .mission { margin-top: 28px; background: var(--teal); color: #fff; border-radius: var(--radius); padding: 24px 26px; }
 .mission-label { color: var(--gold); font-weight: 800; font-size: .8rem; text-transform: uppercase; letter-spacing: .12em; }
 .about .mission p { color: #E3F1EF; margin: 8px 0 0; font-size: 1.1rem; font-weight: 600; }
+
+/* Compact payment-system reference below the mosque/organization concept. */
+.payment-reference { display: grid; grid-template-columns: 132px minmax(0, 1fr); align-items: center; margin-top: 24px; }
+.payment-reference a { display: block; }
+.payment-reference img { padding: 10px; border-radius: 0; }
+.payment-reference figcaption { padding: 14px; font-size: .82rem; }
+.payment-reference strong { display: block; color: var(--ink); margin-bottom: 4px; }
+.payment-reference span { display: block; }
