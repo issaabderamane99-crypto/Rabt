@@ -1,17 +1,17 @@
 <!doctype html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Rabt | Cloud Software &amp; Data Solutions</title>
-  <meta name="description" content="Rabt builds practical cloud software and data solutions for businesses and nonprofit organizations.">
+  <title>Rabt | Technology Solutions for Nonprofits &amp; Small Businesses</title>
+  <meta name="description" content="Rabt brings cloud software, data analysis and custom technology solutions to nonprofit organizations and small and midsize businesses.">
   <link rel="canonical" href="https://rabtscs.com/">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://rabtscs.com/">
-  <meta property="og:title" content="Rabt | Cloud Software &amp; Data Solutions">
-  <meta property="og:description" content="Practical cloud software and data solutions for businesses and nonprofit organizations.">
+  <meta property="og:title" content="Rabt | Technology Solutions for Nonprofits &amp; Small Businesses">
+  <meta property="og:description" content="Cloud software, data analysis and custom solutions for nonprofits and small and midsize businesses.">
   <meta property="og:image" content="https://rabtscs.com/assets/hero-dashboard.svg">
-  <meta name="theme-color" content="#0E3B43">
+  <meta name="theme-color" content="#06212A">
   <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,115 +21,185 @@
 <body>
 <a class="skip-link" href="#top">Skip to content</a>
 
+<!-- ============ Header ============ -->
 <header class="site-header">
   <div class="container nav">
     <a href="#top" class="brand" aria-label="Rabt home">
       <img src="assets/logo.svg" alt="" width="36" height="36">
       <span class="brand-name">Rabt</span>
     </a>
+
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation menu">
       <span></span><span></span><span></span>
     </button>
-    <nav id="nav-links" class="nav-links">
-      <a href="#solutions">Solutions</a>
-      <a href="#nonprofit">Mosques &amp; organizations</a>
+
+    <nav id="nav-links" class="nav-links" aria-label="Main">
+      <div class="nav-item has-menu">
+        <button class="nav-trigger" type="button" aria-expanded="false">Solutions</button>
+        <div class="mega">
+          <div class="mega-col">
+            <span class="mega-title">Technology solutions</span>
+            <a href="#solutions">Cloud software (SaaS)</a>
+            <a href="#solutions">Workflow automation</a>
+            <a href="#solutions">Custom software &amp; integrations</a>
+          </div>
+          <div class="mega-col">
+            <span class="mega-title">Data solutions</span>
+            <a href="#data">Data analysis</a>
+            <a href="#data">Dashboards &amp; reporting</a>
+            <a href="#data">Forecasting</a>
+          </div>
+          <div class="mega-col mega-feature">
+            <span class="mega-title">Not sure where to start?</span>
+            <p>Book a free consultation and we’ll help you find the right fit.</p>
+            <a href="#contact" class="link-arrow">Talk to us</a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item has-menu">
+        <button class="nav-trigger" type="button" aria-expanded="false">Who we serve</button>
+        <div class="mega mega-sm">
+          <div class="mega-col">
+            <a href="#nonprofits">Nonprofit organizations</a>
+            <a href="#smb">Small &amp; midsize businesses</a>
+            <a href="#industries">Industries</a>
+          </div>
+        </div>
+      </div>
+      <a href="#approach">Our approach</a>
       <a href="#about">About</a>
-      <a href="#contact" class="btn btn-primary btn-sm">Contact us</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact" class="btn btn-accent btn-sm">Contact us</a>
     </nav>
   </div>
 </header>
 
 <main id="top">
 
-  <!-- Hero -->
+  <!-- ============ Hero ============ -->
   <section class="hero">
-    <div class="container hero-grid">
-      <div class="hero-copy">
-        <p class="eyebrow">SaaS &amp; technology solutions</p>
-        <h1>Technology that connects your organization.</h1>
-        <p class="lead">Cloud software and practical data analysis that help organizations simplify operations, see what’s working, and grow.</p>
-        <div class="hero-actions">
-          <a href="#contact" class="btn btn-primary">Book a free consultation</a>
-          <a href="#solutions" class="btn btn-ghost">Explore services</a>
+    <canvas class="hero-canvas" aria-hidden="true"></canvas>
+    <div class="container hero-inner">
+      <a href="#data" class="announce"><span class="announce-tag">New</span> Data analysis services for nonprofits and growing businesses <span aria-hidden="true">→</span></a>
+      <h1>Technology solutions for organizations that do the real work.</h1>
+      <p class="lead">Rabt brings cloud software, data analysis and custom tools to nonprofit organizations and small and midsize businesses, at a size and price that fits.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-accent">Book a free consultation</a>
+        <a href="#solutions" class="btn btn-outline-light">Explore solutions</a>
+      </div>
+    </div>
+    <div class="container hero-strip">
+      <div><strong>Nonprofits</strong><span>Mission-driven tools</span></div>
+      <div><strong>Small &amp; midsize businesses</strong><span>Grow without the overhead</span></div>
+      <div><strong>Free first consultation</strong><span>No obligation</span></div>
+    </div>
+  </section>
+
+  <!-- ============ Statement ============ -->
+  <section class="statement">
+    <div class="container statement-inner">
+      <p class="eyebrow">Why Rabt</p>
+      <h2 class="display">We bridge the gap between business and people.</h2>
+      <div class="statement-cols">
+        <p>Large companies have IT departments, data teams and enterprise software. Most nonprofits and small businesses don’t. They run on spreadsheets, email and a few people doing everything.</p>
+        <p>Rabt closes that gap. We bring the same kind of technology and insight to smaller organizations, sized to their budget and built around the way their people already work.</p>
+      </div>
+      <a href="#about" class="btn btn-dark">Learn more about Rabt</a>
+    </div>
+  </section>
+
+  <!-- ============ Solutions (dark band) ============ -->
+  <section id="solutions" class="band-dark">
+    <div class="container">
+      <div class="band-head">
+        <div>
+          <p class="eyebrow eyebrow-light">Solutions</p>
+          <h2>Everything you need to run smarter, in one partner</h2>
         </div>
-        <ul class="hero-points">
-          <li>Free first consultation</li>
-          <li>Flexible monthly plans</li>
-          <li>English &amp; Arabic support</li>
+        <p>Pick one service or combine them. Every solution is set up for your team and supported after launch.</p>
+      </div>
+      <div class="sol-grid">
+        <a class="sol-card" href="#contact">
+          <span class="sol-num">01</span>
+          <h3>Cloud software (SaaS)</h3>
+          <p>Ready-to-use online platforms for operations, records and reporting, on a simple monthly plan. No servers to manage.</p>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="sol-card" href="#data">
+          <span class="sol-num">02</span>
+          <h3>Data analysis</h3>
+          <p>We clean, combine and analyze your data, then show you what it means in plain language.</p>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="sol-card" href="#data">
+          <span class="sol-num">03</span>
+          <h3>Dashboards &amp; reporting</h3>
+          <p>Live dashboards for the numbers that matter, from sales and costs to donations and program results.</p>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="sol-card" href="#contact">
+          <span class="sol-num">04</span>
+          <h3>Workflow automation</h3>
+          <p>Replace manual steps and long email chains with automated approvals, reminders and task tracking.</p>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="sol-card" href="#contact">
+          <span class="sol-num">05</span>
+          <h3>Operations &amp; supply chain</h3>
+          <p>Track vendors, purchase orders, inventory and deliveries in one connected system.</p>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="sol-card" href="#contact">
+          <span class="sol-num">06</span>
+          <h3>Custom software &amp; integrations</h3>
+          <p>Connect the tools you already use, or build something designed around your exact needs.</p>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Who we serve ============ -->
+  <section id="nonprofits" class="section">
+    <div class="container split">
+      <div class="split-media">
+        <img src="assets/nonprofit.svg" alt="Illustration of volunteers and a program impact dashboard showing donations, volunteers and families served" width="520" height="400" loading="lazy" decoding="async">
+      </div>
+      <div class="split-copy">
+        <p class="eyebrow">For nonprofit organizations</p>
+        <h2>More time for the mission, less time on admin</h2>
+        <p>Nonprofit teams do a lot with small budgets. We help you organize your work, keep supporters engaged and show your impact to donors and funders.</p>
+        <ul class="checklist">
+          <li><strong>Donor &amp; volunteer management</strong>One place for contacts, donations and volunteer hours.</li>
+          <li><strong>Program &amp; outcome tracking</strong>Track activities, people served and results for every program.</li>
+          <li><strong>Grant-ready reporting</strong>Pull the numbers funders ask for in minutes, not days.</li>
+          <li><strong>Survey &amp; impact analysis</strong>Turn feedback and program data into a clear story of your impact.</li>
         </ul>
       </div>
-      <div class="hero-visual">
-        <img src="assets/hero-dashboard.svg" alt="Illustration of a Rabt dashboard showing orders, on-time delivery, cost savings and monthly performance charts" width="560" height="440">
+    </div>
+  </section>
+
+  <section id="smb" class="section alt">
+    <div class="container split reverse">
+      <div class="split-media">
+        <img src="assets/hero-dashboard.svg" alt="Illustration of a business dashboard showing orders, on-time delivery, cost savings and monthly performance" width="560" height="440" loading="lazy" decoding="async">
+      </div>
+      <div class="split-copy">
+        <p class="eyebrow">For small &amp; midsize businesses</p>
+        <h2>Big-company tools, sized for your business</h2>
+        <p>You don’t need an IT department to run on good systems and good data. We set up the tools, connect your information and help you make faster decisions as you grow.</p>
+        <ul class="checklist">
+          <li><strong>Sales, cost &amp; performance dashboards</strong>See how the business is doing at a glance, updated automatically.</li>
+          <li><strong>Operations &amp; inventory</strong>Manage orders, vendors and stock without juggling spreadsheets.</li>
+          <li><strong>Process automation</strong>Cut repetitive work so your team can focus on customers.</li>
+          <li><strong>Forecasting</strong>Plan staffing, purchasing and budgets with data, not guesses.</li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <!-- Service pillars -->
-  <section class="pillars-wrap">
-    <div class="container pillars">
-      <a class="pillar" href="#solutions">
-        <span class="pillar-num">01</span>
-        <h3>SaaS platforms</h3>
-        <p>Cloud platforms that simplify operations, procurement and nonprofit work.</p>
-      </a>
-      <a class="pillar" href="#data">
-        <span class="pillar-num">02</span>
-        <h3>Data analysis services</h3>
-        <p>Clear dashboards and analysis that help your team act on reliable data.</p>
-      </a>
-      <a class="pillar" href="#contact">
-        <span class="pillar-num">03</span>
-        <h3>Custom solutions</h3>
-        <p>Integrations and tools shaped around your team’s workflow.</p>
-      </a>
-    </div>
-  </section>
-
-  <!-- Solutions -->
-  <section id="solutions" class="section">
-    <div class="container">
-      <div class="section-head">
-        <p class="eyebrow">Solutions</p>
-        <h2>Practical software for the way your team works</h2>
-        <p>Cloud platforms and tailored tools for the work your organization does every day.</p>
-      </div>
-      <div class="cards">
-        <article class="card">
-          <div class="icon" aria-hidden="true">01</div>
-          <h3>Operations &amp; workflow automation</h3>
-          <p>Replace spreadsheets and manual steps with automated approvals, task tracking and team workflows.</p>
-        </article>
-        <article class="card">
-          <div class="icon" aria-hidden="true">02</div>
-          <h3>Supply chain &amp; procurement</h3>
-          <p>Manage vendors, purchase orders, shipments and inventory from one connected platform.</p>
-        </article>
-        <article class="card">
-          <div class="icon" aria-hidden="true">03</div>
-          <h3>Data &amp; reporting dashboards</h3>
-          <p>Bring your data together into clear, real-time dashboards that leaders can act on.</p>
-        </article>
-        <article class="card">
-          <div class="icon" aria-hidden="true">04</div>
-          <h3>Sustainability &amp; ESG reporting</h3>
-          <p>Track emissions and sustainability metrics, including Scope 3, and prepare reports with confidence.</p>
-        </article>
-        <article class="card">
-          <div class="icon" aria-hidden="true">05</div>
-          <h3>Mosque &amp; nonprofit management</h3>
-          <p>Organize donors, volunteers, programs and grants so your team can focus on the mission.</p>
-        </article>
-        <article class="card">
-          <div class="icon" aria-hidden="true">06</div>
-          <h3>Custom software &amp; integrations</h3>
-          <p>Connect the tools you already use, or build a solution designed for your exact needs.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Data analysis -->
-  <section id="data" class="section alt">
+  <!-- ============ Data analysis ============ -->
+  <section id="data" class="section">
     <div class="container split">
       <div class="split-media">
         <img src="assets/data-analysis.svg" alt="Illustration of raw spreadsheet data being cleaned and turned into a clear bar chart with insights" width="520" height="400" loading="lazy" decoding="async">
@@ -137,14 +207,11 @@
       <div class="split-copy">
         <p class="eyebrow">Data analysis services</p>
         <h2>Turn your data into decisions</h2>
-        <p>Most organizations already have the data they need, spread across spreadsheets, systems and reports. Our analysts bring it together, clean it, and show you what it means, so you can act with confidence.</p>
+        <p>Most organizations already have the data they need, spread across spreadsheets, systems and forms. We bring it together, clean it and show you what it means, so you can act with confidence.</p>
         <ul class="checklist">
           <li><strong>Data cleaning &amp; preparation</strong>Fix duplicates, gaps and errors, and combine sources into one reliable dataset.</li>
-          <li><strong>Dashboards &amp; KPI reporting</strong>Interactive dashboards that track the numbers that matter, updated automatically.</li>
           <li><strong>Business &amp; operations analysis</strong>Find what drives costs, delays and revenue, with clear recommendations.</li>
-          <li><strong>Forecasting &amp; trends</strong>Plan ahead with demand, sales and budget forecasts based on your history.</li>
-          <li><strong>Supply chain analytics</strong>Supplier performance, inventory levels, lead times and shipping costs.</li>
-          <li><strong>Survey &amp; impact analysis</strong>Measure program outcomes and stakeholder feedback, ideal for nonprofits and grant reports.</li>
+          <li><strong>KPI reporting</strong>Agree on the few numbers that matter and track them every month.</li>
         </ul>
         <div class="tools">
           <span class="tools-label">Tools we work with</span>
@@ -154,108 +221,114 @@
     </div>
     <div class="container">
       <div class="engagements">
-        <div class="eng">
-          <h3>One-time analysis</h3>
-          <p>A focused project to answer a specific question, delivered as a report and presentation.</p>
-        </div>
-        <div class="eng">
-          <h3>Dashboard build</h3>
-          <p>We design and build a live dashboard connected to your data, then train your team to use it.</p>
-        </div>
-        <div class="eng">
-          <h3>Ongoing analytics</h3>
-          <p>A monthly plan with regular reporting, check-ins and analysis on demand.</p>
-        </div>
+        <div class="eng"><span class="eng-tag">Project</span><h3>One-time analysis</h3><p>A focused project to answer a specific question, delivered as a report and presentation.</p></div>
+        <div class="eng"><span class="eng-tag">Build</span><h3>Dashboard build</h3><p>We design and build a live dashboard connected to your data, then train your team to use it.</p></div>
+        <div class="eng"><span class="eng-tag">Monthly</span><h3>Ongoing analytics</h3><p>A monthly plan with regular reporting, check-ins and analysis on demand.</p></div>
       </div>
     </div>
   </section>
 
-  <!-- Feature: supply chain -->
-  <section class="section">
-    <div class="container split reverse">
-      <div class="split-media">
-        <img src="assets/supply-chain.svg" alt="Illustration of suppliers, a warehouse and deliveries connected through the Rabt platform" width="520" height="400" loading="lazy" decoding="async">
-      </div>
-      <div class="split-copy">
-        <p class="eyebrow">Supply chain &amp; procurement</p>
-        <h2>See every order, vendor and shipment in one place</h2>
-        <p>Supply chains run on many moving parts. Rabt connects them, from the first purchase request to final delivery, so nothing falls through the cracks.</p>
-        <ul class="checklist">
-          <li><strong>Purchase orders &amp; approvals</strong>Create, approve and track orders without email chains.</li>
-          <li><strong>Vendor management</strong>Keep supplier details, pricing and performance in one record.</li>
-          <li><strong>Shipment tracking</strong>Know where every order is and when it will arrive.</li>
-          <li><strong>Sustainability reporting</strong>Estimate transport emissions, including Scope 3, for ESG reports.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Feature: mosques and organizations -->
-  <section id="nonprofit" class="section alt">
-    <div class="container split">
-      <div class="split-media">
-        <img src="assets/mosques-organizations.svg" alt="Illustrative Rabt concept connecting mosques, organizations, donors, and donations and zakat." width="520" height="400" loading="lazy" decoding="async">
-      </div>
-      <div class="split-copy">
-        <p class="eyebrow">For mosques &amp; organizations</p>
-        <h2>More time for the mission, less time on admin</h2>
-        <p>Tools for mosques and nonprofit organizations to organize their work, stay connected with supporters, and show their impact.</p>
-        <ul class="checklist">
-          <li><strong>Donor &amp; volunteer records</strong>One place for contacts, donation records and volunteer hours.</li>
-          <li><strong>Program tracking</strong>Track activities, people served and outcomes for every program.</li>
-          <li><strong>Clear impact reports</strong>Bring together the numbers your community, donors and funders need.</li>
-        </ul>
-        <figure class="photo-card payment-reference">
-          <a href="assets/rabt-donation-concept.webp" aria-label="View the illustrative payment terminal image">
-            <img src="assets/rabt-donation-concept.webp" alt="Original Rabt concept kiosk for donations and zakat." width="1000" height="1000" loading="lazy" decoding="async">
-          </a>
-          <figcaption><strong>Donation &amp; zakat payment concept</strong><span>Original illustrative concept for mosques and organizations; not a product currently offered for sale.</span></figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
-
-  <!-- Process -->
-  <section id="process" class="section alt">
+  <!-- ============ Industries ============ -->
+  <section id="industries" class="section alt">
     <div class="container">
       <div class="section-head">
-        <p class="eyebrow">How we work</p>
-        <h2>From first call to live system</h2>
+        <p class="eyebrow">Industries</p>
+        <h2>Solutions across the sectors we focus on</h2>
+        <p>Every sector works differently. We adapt our tools and analysis to the way your field operates.</p>
       </div>
-      <ol class="steps">
-        <li><span class="num">01</span><h3>Discover</h3><p>We learn your goals, processes and pain points.</p></li>
-        <li><span class="num">02</span><h3>Design</h3><p>We map the right solution and agree on scope.</p></li>
-        <li><span class="num">03</span><h3>Deploy</h3><p>We configure, integrate and train your team.</p></li>
-        <li><span class="num">04</span><h3>Support</h3><p>We stay with you to improve and scale.</p></li>
-      </ol>
+      <div class="ind-grid">
+        <article class="ind"><h3>Nonprofits &amp; community organizations</h3><p>Donor, volunteer and program tracking with impact reporting.</p></article>
+        <article class="ind"><h3>Retail &amp; e-commerce</h3><p>Sales, inventory and customer insights in one view.</p></article>
+        <article class="ind"><h3>Logistics &amp; supply chain</h3><p>Vendor, order and shipment visibility from start to finish.</p></article>
+        <article class="ind"><h3>Healthcare practices</h3><p>Scheduling, supply and operations reporting for smaller clinics.</p></article>
+        <article class="ind"><h3>Education &amp; training</h3><p>Enrollment, attendance and outcome dashboards.</p></article>
+        <article class="ind"><h3>Professional services</h3><p>Project, time and client reporting for growing firms.</p></article>
+        <article class="ind"><h3>Construction &amp; real estate</h3><p>Project costs, procurement and schedule tracking.</p></article>
+        <article class="ind"><h3>Food &amp; hospitality</h3><p>Cost, waste and sales analysis to protect thin margins.</p></article>
+      </div>
     </div>
   </section>
 
-  <!-- About -->
-  <section id="about" class="section">
+  <!-- ============ Use cases ============ -->
+  <section class="section">
     <div class="container">
-      <div class="about">
+      <div class="band-head band-head-light">
         <div>
-          <p class="eyebrow">About Rabt</p>
-          <h2>We bridge the gap between business and people.</h2>
-          <p>Technology should make work easier. Too often, organizations end up with software their teams don’t use and data they can’t act on. Rabt builds practical tools and turns data into clear decisions.</p>
-          <p>Based in Tempe, Arizona, we work with companies, growing businesses and nonprofits to build around the way their people work.</p>
-          <div class="mission">
-            <span class="mission-label">Our mission</span>
-            <p>To help every organization, whatever its size or budget, use technology and data to serve its people better.</p>
-          </div>
+          <p class="eyebrow">What we can do for you</p>
+          <h2>Example use cases</h2>
         </div>
-        <ul class="values">
-          <li><strong>People first</strong><span>We start with the people who will use the system, not with the software.</span></li>
-          <li><strong>Clear, not complex</strong><span>Simple tools and plain-language reports, without the jargon.</span></li>
-          <li><strong>Measurable results</strong><span>Every project has goals we track: time saved, costs reduced, impact shown.</span></li>
-          <li><strong>Partners for the long run</strong><span>We stay after launch to support, improve and grow with you.</span></li>
-        </ul>
+        <p>A few of the problems we help organizations like yours solve.</p>
+      </div>
+      <div class="case-grid">
+        <article class="case">
+          <div class="case-img"><img src="assets/data-analysis.svg" alt="" loading="lazy" decoding="async"></div>
+          <span class="case-label">Data &amp; reporting</span>
+          <h3>From scattered spreadsheets to one live dashboard</h3>
+          <p>Combine sales, cost and team data into one dashboard leaders check every morning.</p>
+        </article>
+        <article class="case">
+          <div class="case-img"><img src="assets/nonprofit.svg" alt="" loading="lazy" decoding="async"></div>
+          <span class="case-label">Nonprofit</span>
+          <h3>Show donors the impact of every dollar</h3>
+          <p>Track programs and outcomes so annual and grant reports take hours, not weeks.</p>
+        </article>
+        <article class="case">
+          <div class="case-img"><img src="assets/supply-chain.svg" alt="" loading="lazy" decoding="async"></div>
+          <span class="case-label">Operations</span>
+          <h3>Every order, vendor and delivery in one place</h3>
+          <p>Replace email chains with purchase orders, approvals and tracking in a single system.</p>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- FAQ -->
+  <!-- ============ Approach (dark) ============ -->
+  <section id="approach" class="band-dark">
+    <div class="container">
+      <div class="band-head">
+        <div>
+          <p class="eyebrow eyebrow-light">Our approach</p>
+          <h2>From first call to working solution</h2>
+        </div>
+        <p>A simple, clear process so you always know what happens next.</p>
+      </div>
+      <ol class="steps-dark">
+        <li><span class="num">01</span><h3>Discover</h3><p>We learn your goals, processes and pain points in a free consultation.</p></li>
+        <li><span class="num">02</span><h3>Design</h3><p>We recommend the right solution and agree on scope, timeline and price.</p></li>
+        <li><span class="num">03</span><h3>Deliver</h3><p>We set up, integrate and train your team so the solution gets used.</p></li>
+        <li><span class="num">04</span><h3>Support</h3><p>We stay with you to improve, report on results and grow with you.</p></li>
+      </ol>
+      <div class="facts-dark">
+        <div><strong>3</strong><span>Service lines: software, data and custom solutions</span></div>
+        <div><strong>2</strong><span>Languages: English and Arabic</span></div>
+        <div><strong>1</strong><span>Point of contact for your whole project</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ About ============ -->
+  <section id="about" class="section">
+    <div class="container about">
+      <div>
+        <p class="eyebrow">About Rabt</p>
+        <h2>Built for the organizations that keep communities running.</h2>
+        <p>Rabt is a technology solutions company based in Tempe, Arizona. We focus on the organizations that big technology firms often overlook: nonprofits and small and midsize businesses.</p>
+        <p>We combine cloud software, data analysis and hands-on support so that smaller teams can work with the same clarity and confidence as large ones.</p>
+        <div class="mission">
+          <span class="mission-label">Our mission</span>
+          <p>To help every organization, whatever its size or budget, use technology and data to serve its people better.</p>
+        </div>
+      </div>
+      <ul class="values">
+        <li><strong>People first</strong><span>We start with the people who will use the system, not with the software.</span></li>
+        <li><strong>Clear, not complex</strong><span>Simple tools and plain-language reports, without the jargon.</span></li>
+        <li><strong>Measurable results</strong><span>Every project has goals we track: time saved, costs reduced, impact shown.</span></li>
+        <li><strong>Partners for the long run</strong><span>We stay after launch to support, improve and grow with you.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
   <section id="faq" class="section alt">
     <div class="container faq-wrap">
       <div class="section-head">
@@ -264,6 +337,10 @@
         <p>Can’t find your answer? <a href="#contact">Send us a message</a>.</p>
       </div>
       <div class="faq">
+        <details>
+          <summary>Who do you work with?</summary>
+          <p>Nonprofit organizations and small and midsize businesses. If your team doesn’t have its own IT or data department, we’re built for you.</p>
+        </details>
         <details>
           <summary>What does “SaaS” mean?</summary>
           <p>Software as a Service. Instead of buying and installing software, you use it online through a monthly subscription. We handle hosting, updates and security.</p>
@@ -284,45 +361,44 @@
           <summary>Do you offer pricing for nonprofits?</summary>
           <p>Yes. Nonprofit organizations receive discounted pricing on our software and data services. Contact us to learn more.</p>
         </details>
-        <details>
-          <summary>How long does it take to get started?</summary>
-          <p>Most data projects start within a week of the first consultation. Software timelines depend on how much setup and integration you need; we agree on a schedule before work begins.</p>
-        </details>
       </div>
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="section">
+  <!-- ============ Contact ============ -->
+  <section id="contact" class="contact-band">
     <div class="container contact">
-      <div>
-        <p class="eyebrow">Contact</p>
-        <h2>Let’s make work easier</h2>
-        <p>Tell us what your team needs. We’ll follow up to schedule a free consultation.</p>
-        <p class="contact-line"><a href="mailto:rabtsupplychain@gmail.com">rabtsupplychain@gmail.com</a></p>
+      <div class="contact-copy">
+        <p class="eyebrow eyebrow-light">Let’s talk</p>
+        <h2>Ready to make work easier?</h2>
+        <p>Tell us about your organization and what you need. We’ll follow up to schedule a free consultation.</p>
+        <p class="contact-line">Email us directly<br><a href="mailto:rabtsupplychain@gmail.com">rabtsupplychain@gmail.com</a></p>
       </div>
       <form class="form" id="contact-form">
         <label><span>Full name</span><input name="name" autocomplete="name" required></label>
+        <label><span>Work email</span><input name="email" type="email" autocomplete="email" required></label>
         <label><span>Organization</span><input name="org" autocomplete="organization"></label>
-        <label><span>Email</span><input name="email" type="email" autocomplete="email" required></label>
+        <label><span>Job title</span><input name="title" autocomplete="organization-title"></label>
         <label><span>Organization type</span>
           <select name="type">
-            <option>Company / enterprise</option>
-            <option>For-profit business</option>
             <option>Nonprofit organization</option>
+            <option>Small business</option>
+            <option>Midsize business</option>
             <option>Other</option>
           </select>
         </label>
-        <label class="full"><span>What do you need?</span>
+        <label><span>What do you need?</span>
           <select name="service">
             <option>Data analysis</option>
-            <option>SaaS platform</option>
+            <option>Dashboards &amp; reporting</option>
+            <option>Cloud software (SaaS)</option>
+            <option>Workflow automation</option>
             <option>Custom software or integration</option>
             <option>Not sure yet</option>
           </select>
         </label>
-        <label class="full"><span>How can we help?</span><textarea name="message" rows="4" autocomplete="off"></textarea></label>
-        <button class="btn btn-primary full" type="submit">Send message</button>
+        <label class="full"><span>How can we help?</span><textarea name="message" rows="4"></textarea></label>
+        <button class="btn btn-accent full" type="submit">Send message</button>
         <p class="form-note full">Submitting opens your email app with the message ready to send.</p>
       </form>
     </div>
@@ -330,13 +406,38 @@
 
 </main>
 
+<!-- ============ Footer ============ -->
 <footer class="site-footer">
-  <div class="container footer-row">
-    <div class="brand">
-      <img src="assets/logo.svg" alt="" width="28" height="28">
-      <span class="brand-name">Rabt</span>
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="#top" class="brand"><img src="assets/logo.svg" alt="" width="32" height="32"><span class="brand-name">Rabt</span></a>
+      <p>Technology solutions for nonprofits and small and midsize businesses.</p>
+      <p>Tempe, Arizona</p>
     </div>
-    <p><span>Tempe, Arizona</span> · © <span id="year"></span> Rabt. <span>All rights reserved.</span></p>
+    <div>
+      <h4>Solutions</h4>
+      <a href="#solutions">Cloud software</a>
+      <a href="#data">Data analysis</a>
+      <a href="#data">Dashboards &amp; reporting</a>
+      <a href="#solutions">Custom software</a>
+    </div>
+    <div>
+      <h4>Who we serve</h4>
+      <a href="#nonprofits">Nonprofits</a>
+      <a href="#smb">Small &amp; midsize businesses</a>
+      <a href="#industries">Industries</a>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <a href="#about">About</a>
+      <a href="#approach">Our approach</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© <span id="year"></span> Rabt. All rights reserved.</span>
+    <a href="mailto:rabtsupplychain@gmail.com">rabtsupplychain@gmail.com</a>
   </div>
 </footer>
 
