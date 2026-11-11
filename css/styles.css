@@ -252,3 +252,27 @@ h1, h2, h3, h4 { letter-spacing: -.02em; }
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; scroll-behavior: auto !important; }
 }
+
+/* ---------- Simplified layout ---------- */
+.hero { padding: 140px 0 140px; }
+.band-title, .section-title { font-size: clamp(2rem, 4vw, 3rem); line-height: 1.1; font-weight: 800; margin: 0 0 48px; }
+.sol-grid { grid-template-columns: repeat(4, 1fr); }
+.sol-card { padding: 36px 28px; }
+.serve-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.serve-card { background: #fff; border: 1px solid var(--line); border-top: 4px solid var(--accent); border-radius: var(--radius); padding: 36px 32px; }
+.serve-card:nth-child(2) { border-top-color: var(--gold); }
+.serve-card h3 { margin: 0 0 10px; font-size: 1.4rem; }
+.serve-card p { margin: 0; color: var(--ink-soft); font-size: 1.05rem; }
+.about-simple > * { max-width: 860px; }
+.about-simple .display { margin-bottom: 24px; }
+.about-simple p:not(.eyebrow) { color: var(--ink-soft); font-size: 1.15rem; margin: 0; }
+.faq-wrap .section-title { margin-bottom: 0; }
+.site-footer { padding: 0; }
+.footer-bottom { align-items: center; border-top: 0; padding: 28px 0; }
+.footer-bottom .brand { color: #fff; }
+@media (max-width: 1060px) { .sol-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 900px) {
+  .serve-grid { grid-template-columns: 1fr; }
+  .hero { padding: 96px 0; }
+}
+@media (max-width: 600px) { .sol-grid { grid-template-columns: 1fr; } }

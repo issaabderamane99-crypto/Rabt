@@ -1,21 +1,12 @@
-// Rabt website — navigation, mega menus, hero animation, contact form, footer year
+// Rabt website — mobile menu, hero animation, contact form, footer year
 
 const menuButton = document.querySelector(".menu-toggle");
 const navLinks = document.querySelector("#nav-links");
-const menus = document.querySelectorAll(".has-menu");
-
-function closeMenus() {
-  menus.forEach(m => {
-    m.classList.remove("open");
-    m.querySelector(".nav-trigger").setAttribute("aria-expanded", "false");
-  });
-}
 
 function closeNav() {
   navLinks.classList.remove("open");
   menuButton.setAttribute("aria-expanded", "false");
   menuButton.setAttribute("aria-label", "Open navigation menu");
-  closeMenus();
 }
 
 menuButton.addEventListener("click", () => {
@@ -23,25 +14,8 @@ menuButton.addEventListener("click", () => {
   menuButton.setAttribute("aria-expanded", String(open));
   menuButton.setAttribute("aria-label", open ? "Close navigation menu" : "Open navigation menu");
 });
-
-menus.forEach(menu => {
-  const trigger = menu.querySelector(".nav-trigger");
-  trigger.addEventListener("click", () => {
-    const willOpen = !menu.classList.contains("open");
-    closeMenus();
-    if (willOpen) {
-      menu.classList.add("open");
-      trigger.setAttribute("aria-expanded", "true");
-    }
-  });
-});
-
-navLinks.querySelectorAll("a").forEach(link => link.addEventListener("click", () => {
-  closeNav();
-  if (document.activeElement) document.activeElement.blur();
-}));
+navLinks.querySelectorAll("a").forEach(link => link.addEventListener("click", closeNav));
 document.addEventListener("keydown", e => { if (e.key === "Escape") closeNav(); });
-document.addEventListener("click", e => { if (!e.target.closest(".has-menu")) closeMenus(); });
 
 // Hero: slowly moving "connection" network
 (function heroNetwork() {
@@ -104,14 +78,12 @@ document.addEventListener("click", e => { if (!e.target.closest(".has-menu")) cl
 document.getElementById("contact-form").addEventListener("submit", event => {
   event.preventDefault();
   const form = new FormData(event.currentTarget);
-  const subject = `Website inquiry from ${form.get("name")} (${form.get("org") || "—"})`;
+  const subject = `Website inquiry from ${form.get("name")}`;
   const body = [
     `Name: ${form.get("name")}`,
     `Email: ${form.get("email")}`,
-    `Organization: ${form.get("org")}`,
-    `Job title: ${form.get("title")}`,
+    `Organization: ${form.get("org") || "—"}`,
     `Organization type: ${form.get("type")}`,
-    `Service: ${form.get("service")}`,
     "",
     String(form.get("message") || "")
   ].join("\n");

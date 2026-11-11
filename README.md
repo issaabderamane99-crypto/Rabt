@@ -7,9 +7,9 @@ Website for **Rabt**, a technology and AI solutions company for for-profit compa
 A static, single-page website in English. No build step.
 
 ```
-index.html      Main page: hero, solutions, AI, nonprofits, for-profit companies, data analysis, industries, use cases, approach, about, FAQ, contact
+index.html      Main page: hero, solutions, AI, who we serve, how we work, about, FAQ, contact
 css/styles.css  Styles and responsive layout
-js/main.js      Menus, hero animation, contact form
+js/main.js      Mobile menu, hero animation, contact form
 assets/         Logo and illustrations
 ```
 
