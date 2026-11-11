@@ -1,13 +1,13 @@
 # Rabt
 
-Website for **Rabt**, a technology solutions company for nonprofit organizations and small and midsize businesses. We bridge the gap between business and people.
+Website for **Rabt**, a technology and AI solutions company for for-profit companies and nonprofit organizations. We bridge the gap between business and people.
 
 ## What's here
 
 A static, single-page website in English. No build step.
 
 ```
-index.html      Main page: hero, solutions, nonprofits, small & midsize businesses, data analysis, industries, use cases, approach, about, FAQ, contact
+index.html      Main page: hero, solutions, AI, nonprofits, for-profit companies, data analysis, industries, use cases, approach, about, FAQ, contact
 css/styles.css  Styles and responsive layout
 js/main.js      Menus, hero animation, contact form
 assets/         Logo and illustrations
