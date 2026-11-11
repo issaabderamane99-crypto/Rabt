@@ -276,3 +276,39 @@ h1, h2, h3, h4 { letter-spacing: -.02em; }
   .hero { padding: 96px 0; }
 }
 @media (max-width: 600px) { .sol-grid { grid-template-columns: 1fr; } }
+
+/* ---------- Professional detail layer ---------- */
+.hero { padding: 110px 0 0; }
+.hero-grid { position: relative; display: grid; grid-template-columns: 1.1fr .9fr; gap: 56px; align-items: center; }
+.hero h1 { font-size: clamp(2.4rem, 5vw, 4rem); max-width: 16ch; }
+.hero-visual img { width: 100%; height: auto; filter: drop-shadow(0 30px 60px rgba(0,0,0,.35)); }
+.trust { position: relative; display: grid; grid-template-columns: repeat(4, 1fr); margin-top: 80px; border-top: 1px solid rgba(255,255,255,.12); }
+.trust span { padding: 22px 16px 26px 0; color: #BFD6D2; font-weight: 600; font-size: .95rem; display: flex; gap: 10px; align-items: center; }
+.trust span::before { content: "✓"; color: var(--accent-2); font-weight: 800; }
+
+.band-head .band-title { margin: 0; }
+.sol-card ul { list-style: none; padding: 0; margin: 18px 0 0; display: grid; gap: 8px; border-top: 1px solid rgba(255,255,255,.1); padding-top: 18px; }
+.sol-card li { color: #D5E6E3; font-size: .92rem; font-weight: 500; padding-left: 16px; position: relative; }
+.sol-card li::before { content: ""; position: absolute; left: 0; top: .6em; width: 6px; height: 6px; border-radius: 50%; background: var(--accent-2); }
+
+.ai-points { display: grid; gap: 16px; margin-top: 28px; }
+.ai-points div { border-left: 3px solid var(--accent); padding-left: 16px; display: flex; flex-direction: column; }
+.ai-points strong { color: var(--ink); }
+.ai-points span { color: var(--ink-soft); }
+
+.serve-card .checklist { margin-top: 22px; gap: 12px; }
+.serve-card .checklist li { color: var(--ink); font-weight: 500; }
+.industries { margin-top: 40px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.industries-label { font-weight: 700; color: var(--ink-soft); margin-right: 8px; }
+
+.about h2 { margin-bottom: 18px; }
+
+@media (max-width: 900px) {
+  .hero-grid { grid-template-columns: 1fr; }
+  .hero-visual { max-width: 520px; }
+  .trust { grid-template-columns: 1fr 1fr; margin-top: 56px; }
+}
+@media (max-width: 600px) { .trust { grid-template-columns: 1fr; } .trust span { padding: 12px 0; } }
+.site-footer { padding: 64px 0 0; }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,.08); padding: 22px 0; }
+.footer-grid span { color: #9CBDB8; }

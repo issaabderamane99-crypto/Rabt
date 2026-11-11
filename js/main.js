@@ -84,6 +84,7 @@ document.getElementById("contact-form").addEventListener("submit", event => {
     `Email: ${form.get("email")}`,
     `Organization: ${form.get("org") || "—"}`,
     `Organization type: ${form.get("type")}`,
+    `Service: ${form.get("service")}`,
     "",
     String(form.get("message") || "")
   ].join("\n");

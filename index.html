@@ -35,6 +35,7 @@
       <a href="#serve">Who we serve</a>
       <a href="#process">How we work</a>
       <a href="#about">About</a>
+      <a href="#faq">FAQ</a>
       <a href="#contact" class="btn btn-accent btn-sm">Contact us</a>
     </nav>
   </div>
@@ -45,13 +46,25 @@
   <!-- Hero -->
   <section class="hero">
     <canvas class="hero-canvas" aria-hidden="true"></canvas>
-    <div class="container hero-inner">
-      <h1>Technology and AI solutions that move your organization forward.</h1>
-      <p class="lead">We help for-profit companies and nonprofit organizations work smarter with AI, software and data.</p>
-      <div class="hero-actions">
-        <a href="#contact" class="btn btn-accent">Book a free consultation</a>
-        <a href="#solutions" class="btn btn-outline-light">Our solutions</a>
+    <div class="container hero-grid">
+      <div class="hero-inner">
+        <p class="eyebrow eyebrow-light">Technology · AI · Data</p>
+        <h1>Technology and AI solutions that move your organization forward.</h1>
+        <p class="lead">We help for-profit companies and nonprofit organizations work smarter with AI, software and data.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-accent">Book a free consultation</a>
+          <a href="#solutions" class="btn btn-outline-light">Our solutions</a>
+        </div>
       </div>
+      <div class="hero-visual">
+        <img src="assets/hero-dashboard.svg" alt="Illustration of a Rabt dashboard with performance charts and an insight card" width="560" height="440">
+      </div>
+    </div>
+    <div class="container trust">
+      <span>Free first consultation</span>
+      <span>Clear proposal before work begins</span>
+      <span>Training included</span>
+      <span>Support after launch</span>
     </div>
   </section>
 
@@ -59,27 +72,34 @@
   <section id="solutions" class="band-dark">
     <div class="container">
       <p class="eyebrow eyebrow-light">Solutions</p>
-      <h2 class="band-title">What we do</h2>
+      <div class="band-head">
+        <h2 class="band-title">What we do</h2>
+        <p>Four service areas. Use one, or combine them into a complete solution.</p>
+      </div>
       <div class="sol-grid">
         <div class="sol-card">
           <span class="sol-num">01</span>
           <h3>AI solutions</h3>
-          <p>AI assistants, smart automation and predictions that save time and support better decisions.</p>
+          <p>Put AI to work on everyday tasks so your team can focus on people.</p>
+          <ul><li>AI assistants &amp; chatbots</li><li>Document &amp; email processing</li><li>Predictive insights</li></ul>
         </div>
         <div class="sol-card">
           <span class="sol-num">02</span>
           <h3>Software &amp; automation</h3>
-          <p>Cloud tools that replace spreadsheets and manual steps with simple, connected workflows.</p>
+          <p>Replace spreadsheets and manual steps with connected cloud tools.</p>
+          <ul><li>Workflow &amp; approval automation</li><li>Operations &amp; inventory systems</li><li>CRM &amp; records management</li></ul>
         </div>
         <div class="sol-card">
           <span class="sol-num">03</span>
           <h3>Data analysis</h3>
-          <p>We turn your data into clear dashboards, reports and recommendations.</p>
+          <p>Turn the data you already have into decisions you can trust.</p>
+          <ul><li>Data cleaning &amp; preparation</li><li>Dashboards &amp; KPI reporting</li><li>Forecasting</li></ul>
         </div>
         <div class="sol-card">
           <span class="sol-num">04</span>
           <h3>Custom solutions</h3>
-          <p>Integrations and tools built around the way your team already works.</p>
+          <p>Tools designed around the way your team already works.</p>
+          <ul><li>System integrations</li><li>Custom web applications</li><li>Technology consulting</li></ul>
         </div>
       </div>
     </div>
@@ -95,6 +115,11 @@
         <p class="eyebrow">Artificial intelligence</p>
         <h2>Practical AI, without the guesswork</h2>
         <p>We find where AI can make a real difference in your work, build it in, and train your team to use it responsibly.</p>
+        <div class="ai-points">
+          <div><strong>Start with the problem</strong><span>We pick use cases with clear time or cost savings.</span></div>
+          <div><strong>Keep people in control</strong><span>AI supports your team’s decisions; it doesn’t replace them.</span></div>
+          <div><strong>Use it responsibly</strong><span>Clear policies for privacy, accuracy and data security.</span></div>
+        </div>
       </div>
     </div>
   </section>
@@ -108,11 +133,17 @@
         <div class="serve-card">
           <h3>For-profit companies</h3>
           <p>Grow faster, cut repetitive work and make decisions with real numbers.</p>
+          <ul class="checklist"><li>Sales, cost and performance dashboards</li><li>Automated operations and customer service</li><li>Forecasting for staffing, purchasing and budgets</li></ul>
         </div>
         <div class="serve-card">
           <h3>Nonprofit organizations</h3>
           <p>Spend less time on admin, track your programs and show donors your impact.</p>
+          <ul class="checklist"><li>Donor and volunteer management</li><li>Program and outcome tracking</li><li>Grant-ready impact reporting</li></ul>
         </div>
+      </div>
+      <div class="industries">
+        <span class="industries-label">Industries we work with</span>
+        <span class="chip">Retail &amp; e-commerce</span><span class="chip">Logistics &amp; supply chain</span><span class="chip">Healthcare</span><span class="chip">Education</span><span class="chip">Professional services</span><span class="chip">Construction &amp; real estate</span><span class="chip">Community organizations</span>
       </div>
     </div>
   </section>
@@ -133,10 +164,17 @@
 
   <!-- About -->
   <section id="about" class="section">
-    <div class="container about-simple">
-      <p class="eyebrow">About Rabt</p>
-      <h2 class="display">We bridge the gap between business and people.</h2>
-      <p>Rabt is a technology solutions company based in Tempe, Arizona. Our mission is to help every organization, whatever its size, use technology and AI to serve people better.</p>
+    <div class="container about">
+      <div>
+        <p class="eyebrow">About Rabt</p>
+        <h2>We bridge the gap between business and people.</h2>
+        <p>Rabt is a technology solutions company based in Tempe, Arizona. Our mission is to help every organization, whatever its size, use technology and AI to serve people better.</p>
+      </div>
+      <ul class="values">
+        <li><strong>People first</strong><span>We design around the people who will use the solution.</span></li>
+        <li><strong>Clear, not complex</strong><span>Plain language, simple tools, no jargon.</span></li>
+        <li><strong>Measurable results</strong><span>Every project has goals we track and report on.</span></li>
+      </ul>
     </div>
   </section>
 
@@ -188,6 +226,15 @@
             <option>Other</option>
           </select>
         </label>
+        <label class="full"><span>Service of interest</span>
+          <select name="service">
+            <option>AI solutions</option>
+            <option>Software &amp; automation</option>
+            <option>Data analysis</option>
+            <option>Custom solutions</option>
+            <option>Not sure yet</option>
+          </select>
+        </label>
         <label class="full"><span>How can we help?</span><textarea name="message" rows="4"></textarea></label>
         <button class="btn btn-accent full" type="submit">Send message</button>
       </form>
@@ -197,10 +244,32 @@
 </main>
 
 <footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="#top" class="brand"><img src="assets/logo.svg" alt="" width="32" height="32"><span class="brand-name">Rabt</span></a>
+      <p>Technology and AI solutions for businesses and nonprofit organizations.</p>
+    </div>
+    <div>
+      <h4>Solutions</h4>
+      <a href="#solutions">AI solutions</a>
+      <a href="#solutions">Software &amp; automation</a>
+      <a href="#solutions">Data analysis</a>
+      <a href="#solutions">Custom solutions</a>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <a href="#about">About</a>
+      <a href="#process">How we work</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <a href="mailto:rabtsupplychain@gmail.com">rabtsupplychain@gmail.com</a>
+      <span>Tempe, Arizona</span>
+    </div>
+  </div>
   <div class="container footer-bottom">
-    <a href="#top" class="brand"><img src="assets/logo.svg" alt="" width="28" height="28"><span class="brand-name">Rabt</span></a>
-    <span>Tempe, Arizona · © <span id="year"></span> Rabt</span>
-    <a href="mailto:rabtsupplychain@gmail.com">rabtsupplychain@gmail.com</a>
+    <span>© <span id="year"></span> Rabt. All rights reserved.</span>
   </div>
 </footer>
 
